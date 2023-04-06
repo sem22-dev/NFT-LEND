@@ -4,8 +4,8 @@ import bgImg from '../public/images/backgroundImage.png';
 export default function Home(){
     return(
         
-        <div className=" bg-center bg-contain bg-no-repeat max-w-full  h-[940px] pt-56 relative top-0"
-        style={{ backgroundImage: "url('/images/test.png')" }}>
+        <div className=" bg-center bg-contain bg-no-repeat max-w-full  h-[980px] pt-56 relative top-0"
+        style={{ backgroundImage: "url('/images/backgroundImage.png')" }}>
                 <div className="container flex flex-col mx-auto ">
                     <div className="items-center flex justify-center text-[56px] font-bold text-center ">
                         <h1>Use your NFT collection as collateral for a crypto loan</h1>
