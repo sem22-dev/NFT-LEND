@@ -1,7 +1,5 @@
 import './globals.css'
 import Navbar from './Navbar'
-import Landing from './Landing'
-import Process from './Process/page'
 
 export const metadata = {
   title: 'ArtLand',
@@ -16,10 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
-        {/* <Landing /> */}
+        <Navbar />
         {children}
-        </body>
+      </body>
     </html>
   )
 }
