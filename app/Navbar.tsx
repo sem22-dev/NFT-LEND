@@ -12,7 +12,7 @@ export default function Navbar(){
     return(
         <div>
             <div className=' z-10 relative pt-20 hidden lg:block'>
-            <div className="flex mx-auto justify-between items-center container py-3 px-20">
+            <div className="flex mx-auto justify-between items-center container py-3 px-20 2xl:px-48">
                 <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
 
                 <div className="flex gap-16 text-[18px]">
@@ -37,7 +37,7 @@ export default function Navbar(){
                     
                 <div className=" flex justify-between items-center px-3 py-3  sm:px-16 sm:py-16 ">
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
-                    <Link href="/" className=" text-[27px] font-light ">ArtLend</Link>
+                    <Link href="/" className=" text-[27px] font-extrabold ">SageFi</Link>
                 </div>
                 {
                     toggleMenu && (

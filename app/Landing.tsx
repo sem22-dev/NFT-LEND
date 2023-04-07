@@ -8,7 +8,7 @@ export default function Home(){
             <div className=" bg-center bg-contain bg-no-repeat sm:max-w-full h-[600px] lg:h-[980px] lg:pt-56 top-0 sm:block hidden" style={{ backgroundImage: "url('/images/backgroundImage.png')" }}>
                     <div className=" container flex flex-col gap-8 mx-auto ">
                         
-                        <div className=" sm:pt-40 lg:pt-0 items-center lg:px-20 px-20 lg:pb-0 flex justify-center lg:text-[56px] text-[26px] font-bold text-center ">
+                        <div className=" sm:pt-40 lg:pt-0 items-center lg:px-20 px-20 2xl:px-48 lg:pb-0 flex justify-center lg:text-[56px] text-[26px] font-bold text-center ">
                             <h1>Use your NFT collection as collateral for a crypto loan</h1>
                         </div>
 
