@@ -1,5 +1,3 @@
-
-
 export default function Process(){
     return(
         <div className="flex flex-col w-[100%] bg-gray-800 h-[100%] lg:p-20 p-8">
@@ -25,18 +23,6 @@ export default function Process(){
                 <h2>Lenders</h2>
             </div>
         </div>
-
-        <div className="container flex flex-col items-center justify-center">
-                
-
-
-
-
-                <div>
-
-                </div>
-            </div>
-
         </div>
     )
 }

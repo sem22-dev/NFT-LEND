@@ -29,27 +29,29 @@ export default function Navbar(){
            </div>
         </div>
 
-        <div className=' z-10 relative lg:hidden flex flex-row justify-between'>
-           <div className="mx-auto container  flex flex-row justify-between ">
-                <HiOutlineMenuAlt1 fontSize={27} className="mt-8 ml-12 z-10" onClick={() => setToggleMenu(true)}/> {
+        <div className=' bg-transparent relative z-10 lg:hidden flex flex-row justify-between h-screen'>
+           <div className=" bg-transparent mx-auto container ">
+                <HiOutlineMenuAlt1 fontSize={27} className="mt-5 ml-5 z-10" onClick={() => setToggleMenu(!toggleMenu)}/> {
+                    
                     toggleMenu && (
-                        <div>
-                            {/* <div className="flex px-0 justify-center items-center w-[70%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
-                            <div className="mb-[90px] text-center text-[20px] justify-center items-center text-white">
-                                <Link href="/Process" className="">Process</Link>
+                        <div className="absolute top-0 bg-transparent w-full">
+                            <div className="flex  w-[50%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
+                            <div className=" pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white">
+                                <Link className="flex flex-row" href="/"><p>Home</p> </Link> 
+                                <Link href="/Process" className="flex flex-row">Process</Link>
                                 <Link className="flex flex-row" href="/Lend"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
                                 <Link className="flex flex-row" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
                                 <Link className="flex flex-row" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
                                 <Link href="/blogs">Our Blog</Link>
+                                <button onClick={() => setToggleMenu(!toggleMenu)} className="absolute top-2 right-2">X</button>
                             </div>
-                        </div> */}
+                        </div>
                         </div>
                     )
                 }
-
            </div>
-           <div className="px-12 py-6">
-             <Link href="/" className="text-[25px] font-light ">ArtLend</Link>
+           <div className="pt5 py-5">
+           <Link href="/" className="text-[25px] font-light ">ArtLend</Link>
            </div>
         </div>
      </div>
