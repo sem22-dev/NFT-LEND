@@ -31,28 +31,30 @@ export default function Navbar(){
 
         <div className=' bg-transparent relative z-10 lg:hidden flex flex-row justify-between h-screen'>
            <div className=" bg-transparent mx-auto container ">
-                <HiOutlineMenuAlt1 fontSize={27} className="mt-5 ml-5 z-10" onClick={() => setToggleMenu(!toggleMenu)}/> {
                     
+                <div className="flex justify-between align-center px-3 py-3">
+                    <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
+                    <Link href="/" className="text-[27px] font-light ">ArtLend</Link>
+                </div>
+                {
                     toggleMenu && (
                         <div className="absolute top-0 bg-transparent w-full">
                             <div className="flex  w-[50%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
-                            <div className=" pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white">
-                                <Link className="flex flex-row" href="/"><p>Home</p> </Link> 
-                                <Link href="/Process" className="flex flex-row">Process</Link>
-                                <Link className="flex flex-row" href="/Lend"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                                <Link className="flex flex-row" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
-                                <Link className="flex flex-row" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                                <Link href="/blogs">Our Blog</Link>
-                                <button onClick={() => setToggleMenu(!toggleMenu)} className="absolute top-2 right-2">X</button>
+                                <div className=" pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white">
+                                    <Link className="flex flex-row" href="/"><p>Home</p> </Link> 
+                                    <Link href="/Process" className="flex flex-row">Process</Link>
+                                    <Link className="flex flex-row" href="/Lend"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                                    <Link className="flex flex-row" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
+                                    <Link className="flex flex-row" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                                    <Link href="/blogs">Our Blog</Link>
+                                    <button onClick={() => setToggleMenu(!toggleMenu)} className="absolute top-2 right-2">X</button>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     )
                 }
            </div>
-           <div className="pt5 py-5">
-           <Link href="/" className="text-[25px] font-light ">ArtLend</Link>
-           </div>
+           
         </div>
      </div>
         

@@ -6,8 +6,8 @@ import PreLoader from "./PreLoader"
 export default function Home() {
   return (
     
-       <main className="absolute top-[0px] w-full">
-          <PreLoader />
+       <main className="absolute top-[-10px] w-full">
+          {/* <PreLoader /> */}
            <Landing/>
            <Process />
        </main>

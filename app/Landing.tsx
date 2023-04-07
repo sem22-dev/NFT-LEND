@@ -5,7 +5,7 @@ export default function Home(){
     return(
         
         <div>
-            <div className=" bg-center bg-contain bg-no-repeat md:max-w-full  lg:h-[980px] md:w-[2000px] md:pt-56 pt-50  top-0 lg:block hidden" style={{ backgroundImage: "url('/images/backgroundImage.png')" }}>
+            <div className=" bg-center bg-contain bg-no-repeat md:max-w-full  lg:h-[980px] md:w-[2000px] md:pt-56 pt-50  top-0 sm:block hidden" style={{ backgroundImage: "url('/images/backgroundImage.png')" }}>
                     <div className="container lg:flex sm:flex flex md:flex flex-col mx-auto ">
                         
                         <div className="items-center lg:px-20 px-20 lg:pb-0 md:pb-[160px] pb-[175px] flex justify-center lg:text-[56px] text-[26px] font-bold text-center ">
@@ -21,7 +21,7 @@ export default function Home(){
                     </div>
             </div>
             
-            <div className=" p-2 scale-150 sm:scale-100 lg:hidden bg-center bg-contain bg-no-repeat max-w-full h-[365px]  " style={{ backgroundImage: "url('/images/backgroundImage.png')" }}> 
+            <div className=" p-0 scale-100 sm:scale-100 sm:hidden bg-center bg-contain bg-no-repeat max-w-full h-[365px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
 
             <div className="container relative lg:flex sm:flex flex md:flex flex-col mx-auto ">
     
