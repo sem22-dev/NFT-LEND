@@ -32,13 +32,13 @@ export default function Navbar(){
         <div className=' bg-transparent relative z-10 lg:hidden flex flex-row justify-between h-screen'>
            <div className=" bg-transparent mx-auto container ">
                     
-                <div className="flex justify-between align-center px-3 py-3">
+                <div className=" flex justify-between items-center px-3 py-3  sm:px-16 sm:py-16 ">
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
-                    <Link href="/" className="text-[27px] font-light ">ArtLend</Link>
+                    <Link href="/" className=" text-[27px] font-light ">ArtLend</Link>
                 </div>
                 {
                     toggleMenu && (
-                        <div className="absolute top-0 bg-transparent w-full">
+                        <div className=" absolute top-0 bg-transparent w-full">
                             <div className="flex  w-[50%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
                                 <div className=" pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white">
                                     <Link className="flex flex-row" href="/"><p>Home</p> </Link> 
