@@ -46,7 +46,7 @@ export default function Process(){
                     </div>
                 </div>
                     
-                <div className="mx-auto md:text-lg my-10 md:my-20 w-[226px] inline-flex rounded-lg border border-gray-100 font-bold p-1">
+                <div className="mx-auto md:text-lg my-10 md:my-20 w-[226px] inline-flex rounded-lg border border-header font-bold p-1">
                     <button
                         className="bg-header inline-block rounded-md px-4 py-2 text-sm text-bg hover:text-gray-700 focus:relative"
                     >
