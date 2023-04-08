@@ -4,26 +4,26 @@ import { collections, offers } from '../../Data'
 
 
 export default function Lend(){
-    return(
-        <div className=" text-Pink-900 h-screen p-20 w-full justify-center relative pb-[400px]">
-            <div className="container flex flex-row px-02">
+    return( 
+        <div className=" text-Pink-900 h-screen lg:p-20 px-0 py-20   w-full items-center flex justify-center relative pb-[400px] ">
+            <div className="container flex lg:flex-row flex-col px-02">
                     <div className="flex flex-col px-20">
-                        <div className=" text-[45px] font-bold">
+                        <div className=" lg:text-[45px] font-bold text-[23px] lg:pb-0 ">
                             <h1>Lend</h1>
                         </div>
-                        <div className="w-[500px]">
+                        <div className="lg:w-[500px] w-[300px] lg:pb-0 pb-[20px]">
                             <p>Make loan offers on NFT collections. If you're not paid on time, you get to keep the NFT.</p>
                         </div>
                     </div>
 
 
 
-                    <div className="container w-[500px] h-[150px] bg-gray-100">
+                    <div className="container lg:w-[500px] w-[400px] h-[150px] bg-gray-100 lg:p-0">
                         <div className="flex flex-col px-20 pt-1">
                             <div className=" text-[20px] font-bold pt-[20px]">
                                 <h1>How it works</h1>
                             </div>
-                            <div className="w-[400px] relative text-[13px] ">
+                            <div className="lg:w-[400px] relative text-[13px] w-[300px]">
                                 <p>Borrowers lock in NFTs from collections to receive $SOL, Lenders are repaid at the end of the loan, plus interest. If borrowers fail to repay, lenders keep the NFT.</p>
                                 
                             </div>
