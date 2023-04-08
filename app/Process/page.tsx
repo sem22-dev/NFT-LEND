@@ -32,9 +32,9 @@ import TvlDash from "../tvl"
 
 export default function Process(){
     return(
-        <div className="flex flex-col w-[100%] bg-bg h-[100%] lg:p-20 p-10 sm:p-8">
+        <div className="flex flex-col w-[100%] bg-bg h-[100%] lg:p-20 p-8 pt-20 sm:pt-30">
 
-            <div className="flex flex-col gap-10 items-center justify-center text-center">
+            <div className=" flex flex-col gap-10 items-center justify-center text-center">
                     <div className="color-code-1 lg:text-[54px] text-[28px] lg:leading-[129px] leading-[62px] font-bold">
                         <h1>The process is pretty simple</h1>
                     </div>

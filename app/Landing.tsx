@@ -5,10 +5,10 @@ export default function Home(){
     return(
         
         <div>
-            <div className=" bg-center bg-contain bg-no-repeat sm:max-w-full h-[600px] lg:h-[980px] lg:pt-56 top-0 sm:block hidden" style={{ backgroundImage: "url('/images/backgroundImage2.png')" }}>
+            <div className=" bg-center  bg-contain bg-no-repeat sm:max-w-full h-[600px] lg:h-[980px] mt-8 lg:pt-56 top-0 md:block hidden" style={{ backgroundImage: "url('/images/backgroundImage2.png')" }}>
                     <div className=" container flex flex-col gap-8 mx-auto ">
                         
-                        <div className=" sm:pt-40 lg:pt-0 items-center lg:px-20 px-20 2xl:px-48 lg:pb-0 flex justify-center lg:text-[56px] text-[26px] font-bold text-center ">
+                        <div className=" sm:pt-32 lg:pt-10 items-center lg:px-20 px-20 2xl:px-48 lg:pb-0 flex justify-center lg:text-[56px] text-[26px] font-bold text-center ">
                             <h1>Use your NFT collection as collateral for a crypto loan</h1>
                         </div>
 
@@ -21,11 +21,11 @@ export default function Home(){
                     </div>
             </div>
             
-            <div className=" p-0 sm:hidden bg-center bg-contain bg-no-repeat max-w-full h-[365px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
+            <div className=" p-0 md:hidden bg-center border-red-500 bg-contain bg-no-repeat max-w-full h-[365px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
 
-            <div className="container relative lg:flex sm:flex flex md:flex flex-col mx-auto ">
+            <div className=" relative lg:flex sm:flex flex md:flex flex-col mx-auto ">
     
-                        <div className="absolute text-[16px] px-20 font-bold text-center py-20">
+                        <div className="absolute text-[16px] w-full font-bold text-center py-20">
                             <h1>Use your NFT collection as collateral for a crypto loan</h1>
                         </div>
 
@@ -39,7 +39,7 @@ export default function Home(){
 
             </div>
                 
-        </div>
+         </div>
                     
     )
 }
