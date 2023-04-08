@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 
 import { GoChevronDown, GoChevronUp,} from 'react-icons/go'
@@ -10,6 +10,8 @@ import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 
 export default function Navbar(){
     const [toggleMenu, setToggleMenu ] = useState(false);
+
+
     return(
         <div>
             <div className=' z-10 relative pt-48 xl:pt-32 hidden lg:block'>
@@ -34,16 +36,16 @@ export default function Navbar(){
         </div>
 
     
-           <div className={`${toggleMenu ? 'h-screen' : 'h-16'} w-screen lg:hidden z-20 absolute ${toggleMenu ? 'bg-littleBlack' : 'black'} mx-auto  `}>
+           <div className={`${toggleMenu ? 'h-full' : 'h-16'} w-screen lg:hidden z-20 absolute  mx-auto  `}>
                     
-                <div className="{` ${toggleMenu ? 'bg-littleBlack' : 'bg-white'} flex justify-between items-center px-3 py-3  sm:px-8 sm:pt-4 md:px-16`} ">
+                <div className={` ${toggleMenu ? 'bg-transparent' : 'bg-white'} flex justify-between items-center px-3 py-3  sm:px-8 sm:pt-4 md:px-16`}>
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
                     <Link href="/" className=" text-[27px] font-extrabold ">SageFi</Link>
                 </div>
                 {
                     toggleMenu && (
-                        <div  className= " flex absolute top-0  w-full">
-                            <div className=" flex row w-[50%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
+                        <div  className= {`flex fixed top-0 h-[200vh]  w-full ${toggleMenu ? 'bg-littleBlack' : ''}`}>
+                            <div className=" flex row w-[150%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
                                 <div className="pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white">
                                     <Link  onClick={() => setToggleMenu(false)} className="flex flex-row" href="/"><p>Home</p> </Link> 
                                     <Link onClick={() => setToggleMenu(false)}  href="/Process" className="flex flex-row">Process</Link>
