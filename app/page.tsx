@@ -7,7 +7,7 @@ import TvlDash from "./tvl"
 export default function Home() {
   return (
     
-       <main className="absolute top-[-10px] w-full">
+       <main className=" absolute top-[-10px] w-full">
           {/* <PreLoader /> */}
            <Landing/>
            <Process />

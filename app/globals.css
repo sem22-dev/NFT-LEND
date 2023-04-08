@@ -48,6 +48,8 @@ body {
             transform: translateX(0);
   }
 }
+
+
 .color-code-1 { 
   background: linear-gradient(90deg, #EFBB9D 0%, rgba(255, 201, 170, 0.7) 100%);
   -webkit-background-clip: text;
