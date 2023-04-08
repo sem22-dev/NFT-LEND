@@ -28,6 +28,8 @@
 //     )
 // }
 
+import TvlDash from "../tvl"
+
 export default function Process(){
     return(
         <div className="flex flex-col w-[100%] bg-bg h-[100%] lg:p-20 p-10 sm:p-8">
@@ -128,6 +130,8 @@ export default function Process(){
             </span>
             </a>
         </div>
+
+        <TvlDash />
 </div>
         
         
