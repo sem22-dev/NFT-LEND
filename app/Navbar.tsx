@@ -36,7 +36,7 @@ export default function Navbar(){
         </div>
 
     
-           <div className={`${toggleMenu ? 'h-full' : 'h-16'} w-screen lg:hidden z-20 absolute ${toggleMenu ? 'bg-littleBlack' : ''} mx-auto  `}>
+           <div className={`${toggleMenu ? 'h-full' : 'h-16'} w-screen lg:hidden z-20 absolute  mx-auto  `}>
                     
                 <div className={` ${toggleMenu ? 'bg-transparent' : 'bg-white'} flex justify-between items-center px-3 py-3  sm:px-8 sm:pt-4 md:px-16`}>
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
@@ -44,7 +44,7 @@ export default function Navbar(){
                 </div>
                 {
                     toggleMenu && (
-                        <div  className= " flex fixed top-0 h-full  w-full">
+                        <div  className= {`flex fixed top-0 h-[200vh]  w-full ${toggleMenu ? 'bg-littleBlack' : ''}`}>
                             <div className=" flex row w-[150%] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 slide-side">
                                 <div className="pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white">
                                     <Link  onClick={() => setToggleMenu(false)} className="flex flex-row" href="/"><p>Home</p> </Link> 
