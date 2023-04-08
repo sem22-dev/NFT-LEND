@@ -8,7 +8,7 @@ export default function Home() {
   return (
     
        <main className="absolute top-[-10px] w-full">
-          <PreLoader />
+          {/* <PreLoader /> */}
            <Landing/>
            <Process />
        </main>

@@ -45,14 +45,20 @@ export default function Process(){
                         pledging their NFTs as collateral.</p>
                     </div>
                 </div>
-                    <div className="flex flex-row container p-20 gap-5 items-center justify-center">
-                        <div className="color-code-1 leading-10 text-[24px] cursor-pointer">
-                            <h2>Borrowers</h2>
-                        </div>
-                    <div className="text-[24px] text-gray-500 cursor-pointer flex items-center">
-                        <h2>Lenders</h2>
-                    </div>
-            </div>
+                    
+                <div className="mx-auto md:text-lg my-10 md:my-20 w-[226px] inline-flex rounded-lg border border-gray-100 font-bold p-1">
+                    <button
+                        className="bg-header inline-block rounded-md px-4 py-2 text-sm text-bg hover:text-gray-700 focus:relative"
+                    >
+                        BORROWERS
+                    </button>
+
+                    <button
+                        className="inline-block rounded-md px-4 py-2 text-sm text-gray-500 hover:text-gray-700 focus:relative"
+                    >
+                        LENDERS
+                    </button>
+                </div>
 
            
             
@@ -74,10 +80,9 @@ export default function Process(){
                 <div className="flex flex-row-reverse justify-center gap-10 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
-                        <h1 className="pb-10">List your NFT</h1>
+                        <h1 className="pb-10">Pick best loan offer</h1>
                         <p className=" font-normal w-[190px] sm:w-[500px] text-primary text-[16px] text-left sm:text-[25px]">
-                            The process starts with listing your NFT and defining the loan's terms.
-                            After that, other users will make loan offers to you
+                        Upon accepting a loan offer, your NFT is secured in an escrow smart contract, and the lender transfers wETH/DAI/USDC directly to your wallet.
                         </p>
                     </div>
 
@@ -89,10 +94,9 @@ export default function Process(){
                 <div className="flex flex-row justify-center gap-10 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
-                        <h1 className="pb-10">List your NFT</h1>
+                        <h1 className="pb-10">Repay loan, get NFT back.</h1>
                         <p className=" font-normal w-[190px] sm:w-[500px] text-primary text-[16px] text-left sm:text-[25px]">
-                            The process starts with listing your NFT and defining the loan's terms.
-                            After that, other users will make loan offers to you
+                        When you repay your loan on time, your NFT will be automatically returned to your wallet.
                         </p>
                     </div>
 
@@ -101,9 +105,11 @@ export default function Process(){
                     </div>
                 </div>
 
-        <div className="w-400 mx-auto">
-                            <a
-            className=" group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-primary focus:outline-none focus:ring active:text-indigo-500"
+        <div className="mt-10 mx-auto flex gap-4 md:gap-6">
+          
+            <div className=" w-30 md:w-60">
+            <a
+            className=" bg-white group relative inline-flex items-center overflow-hidden rounded border border-transparent px-8 py-3 text-bg focus:outline-none focus:ring "
             href="/download"
             >
             <span
@@ -125,10 +131,44 @@ export default function Process(){
                 </svg>
             </span>
 
-            <span className="text-sm font-medium transition-all group-hover:ml-4">
+            <span className="text-sm md:text-lg font-medium transition-all group-hover:ml-4">
+                Get started
+            </span>
+            </a>
+            </div>
+
+            <div className="w-100 md:w-60">
+            <a
+            className=" group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-primary focus:outline-none focus:ring"
+            href="/download"
+            >
+            <span
+                className="absolute left-0 -translate-x-full transition-transform group-hover:translate-x-4"
+            >
+                <svg
+                className="h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+                </svg>
+            </span>
+
+            <span className=" text-sm md:text-lg font-medium transition-all group-hover:ml-4">
                 Learn More
             </span>
             </a>
+
+            </div>
+
+           
         </div>
 
         <TvlDash />
