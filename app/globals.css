@@ -55,3 +55,38 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.skills__bar{
+    height: 2px;
+}
+.skills__bar {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.line {
+  position: relative;
+}
+ .line h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#8e908d;
+    height: 2px;
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 70px;
+}
+
+.skills__bar,
+.skills__percentage {
+    height: 2px;
+}
+.skills__bar {
+    background: rgba(255, 255, 255, 0.2);
+}
+.skills__percentage {
+    display: block;
+    background-color: #82097b;
+    position: relative;
+}
