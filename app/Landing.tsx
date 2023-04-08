@@ -5,10 +5,10 @@ export default function Home(){
     return(
         
         <div>
-            <div className=" bg-center  bg-contain bg-no-repeat sm:max-w-full h-[600px] lg:h-[980px] mt-8 lg:pt-56 top-0 md:block hidden" style={{ backgroundImage: "url('/images/backgroundImage2.png')" }}>
+            <div className="mx-16  bg-center bg-contain bg-no-repeat sm:max-w-full h-[600px] lg:h-[700px]  md:block hidden" style={{ backgroundImage: "url('/images/backgroundImage3.png')" }}>
                     <div className=" container flex flex-col gap-8 mx-auto ">
                         
-                        <div className=" sm:pt-32 lg:pt-10 items-center lg:px-20 px-20 2xl:px-48 lg:pb-0 flex justify-center lg:text-[56px] text-[26px] font-bold text-center ">
+                        <div className=" border border-red-500 sm:mt-32 md:mt-10 lg:mt-8 lg:text-[56px] text-[26px] font-bold text-center ">
                             <h1>Use your NFT collection as collateral for a crypto loan</h1>
                         </div>
 
@@ -21,21 +21,22 @@ export default function Home(){
                     </div>
             </div>
             
-            <div className=" p-0 md:hidden bg-center border-red-500 bg-contain bg-no-repeat max-w-full h-[365px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
+            <div className=" pt-10 md:hidden bg-center border-red-500 bg-contain bg-no-repeat max-w-full h-[370px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
 
-            <div className=" relative lg:flex sm:flex flex md:flex flex-col mx-auto ">
+                <div className="  mx-auto ">
     
-                        <div className="absolute text-[16px] w-full font-bold text-center py-20">
-                            <h1>Use your NFT collection as collateral for a crypto loan</h1>
-                        </div>
-
-
-                        <div className="flex flex-row py-[100px] mt-10 items-center justify-center gap-[100px]">
+                    <div className="text-[16px] pb-16 w-full font-bold text-center">
+                            <h1 className='pb-10'>Use your NFT collection as collateral for a crypto loan</h1>
+                        <div className="flex flex-row  items-center justify-center gap-[100px]">
                             <button className="w-[100px] h-[38px] text-white text-[12px]  bg-gray-800">Need a Loan</button>
 
                             <button className="w-[110px] h-[38px] text-[12px] border-gray-800 bg-transparent border-2">Want to lend</button>
                         </div>
                     </div>
+
+
+       
+                </div>
 
             </div>
                 
