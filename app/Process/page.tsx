@@ -1,50 +1,22 @@
-// export default function Process(){
-//     return(
-//         <div className=" flex flex-col w-[100%] bg-gray-800 h-[100%] lg:p-20 p-0 sm:p-8">
-
-//             <div className="flex flex-col gap-10 items-center justify-center text-center">
-//                     <div className="color-code-1 lg:text-[54px] text-[28px] lg:leading-[129px] leading-[62px] font-bold">
-//                         <h1>The process is pretty simple</h1>
-//                     </div>
-
-//                     <div className="text-white lg:text-[32px]">
-//                         <p>ArtLend has emerged as the top-notch liquidity protocol for 
-//                         non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by 
-//                         pledging their NFTs as collateral.</p>
-//                     </div>
-//             </div>
-
-
-//         <div className=" flex flex-row container p-20 gap-5 items-center justify-center">
-//             <div className="color-code-1 leading-10 text-[24px] cursor-pointer">
-//                 <h2>Borrowers</h2>
-//             </div>
-//             <div className="text-[24px] text-gray-500 cursor-pointer">
-//                 <h2>Lenders</h2>
-//             </div>
-            
-//         </div>
-//         </div>
-//     )
-// }
-
 import TvlDash from "../tvl"
+
+
 
 export default function Process(){
     return(
-        <div className="flex flex-col w-[100%] bg-bg h-[100%] lg:p-20 p-8 pt-20 sm:pt-30">
+        <div className="flex flex-col w-[100%] bg-bg h-[100%] pt-20 sm:pt-30">
 
-            <div className=" flex flex-col gap-10 items-center justify-center text-center">
+            <div className="  mx-6 md:mx-16 flex flex-col gap-10 items-center justify-center text-center">
                     <div className="color-code-1 lg:text-[54px] text-[28px] lg:leading-[129px] leading-[62px] font-bold">
                         <h1>The process is pretty simple</h1>
                     </div>
 
-                    <div className="text-white lg:text-[32px]">
+                    <div className="text-white sm:text-[25px] lg:text-[32px]">
                         <p>ArtLend has emerged as the top-notch liquidity protocol for 
                         non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by 
                         pledging their NFTs as collateral.</p>
                     </div>
-                </div>
+            </div>
                     
                 <div className="mx-auto md:text-lg my-10 md:my-20 w-[226px] inline-flex rounded-lg border border-header font-bold p-1">
                     <button
@@ -62,7 +34,7 @@ export default function Process(){
 
            
             
-                <div className="flex flex-row justify-center gap-10 items-center mb-20">
+                <div className="  mx-6 md:mx-16 flex flex-row justify-center gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10">List your NFT</h1>
@@ -72,12 +44,12 @@ export default function Process(){
                         </p>
                     </div>
 
-                    <div className="w-6/12 sm:w-[300px] px-4">
-                    <img src="/images/1.png" alt="..." className="shadow rounded max-w-full h-auto align-middle border-none mt-4" />
+                    <div className="w-[200px] sm:w-[400px] lg:w-[300px]">
+                    <img src="/images/1.png" alt="..." className="shadow rounded max-w-full h-auto align-middle border-none " />
                     </div>
                 </div>
 
-                <div className="flex flex-row-reverse justify-center gap-10 items-center mb-20">
+                <div className="mx-6 md:mx-16 flex flex-row-reverse justify-center  gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10">Pick best loan offer</h1>
@@ -86,26 +58,26 @@ export default function Process(){
                         </p>
                     </div>
 
-                    <div className="w-6/12 sm:w-[300px] px-4">
-                    <img src="/images/2.png" alt="..." className="shadow rounded max-w-full h-auto align-middle border-none mt-4" />
+                    <div className=" w-[200px]  sm:w-[400px] lg:w-[300px]">
+                    <img src="/images/2.png" alt="..." className="shadow rounded max-w-full h-auto  border-none" />
                     </div>
                 </div>
 
-                <div className="flex flex-row justify-center gap-10 items-center mb-20">
+                <div className="mx-6 md:mx-16 flex flex-row justify-center  gap-5 lg:gap-20 items-center mb-20">
                     
-                    <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
+                    <div className= "  text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10">Repay loan, get NFT back.</h1>
                         <p className=" font-normal w-[190px] sm:w-[500px] text-primary text-[16px] text-left sm:text-[25px]">
                         When you repay your loan on time, your NFT will be automatically returned to your wallet.
                         </p>
                     </div>
 
-                    <div className="w-6/12 sm:w-[300px] px-4">
-                    <img src="/images/3.png" alt="..." className="shadow rounded max-w-full h-auto align-middle border-none mt-4" />
+                    <div className="w-[200px] sm:w-[400px] lg:w-[300px]">
+                    <img src="/images/3.png" alt="..." className="shadow rounded max-w-full h-auto align-middle border-none " />
                     </div>
                 </div>
 
-        <div className="mt-10 mx-auto flex gap-4 md:gap-6">
+        <div className=" mt-1 mx-auto flex gap-4 md:gap-6">
           
             <div className=" w-30 md:w-60">
             <a
