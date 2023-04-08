@@ -8,7 +8,7 @@ export default function Home(){
             <div className="mx-16  bg-center bg-contain bg-no-repeat sm:max-w-full h-[600px] lg:h-[700px]  md:block hidden" style={{ backgroundImage: "url('/images/backgroundImage3.png')" }}>
                     <div className=" container flex flex-col gap-8 mx-auto ">
                         
-                        <div className=" border border-red-500 sm:mt-32 md:mt-10 lg:mt-8 lg:text-[56px] text-[26px] font-bold text-center ">
+                        <div className=" sm:mt-32 md:mt-10 lg:mt-8 lg:text-[56px] text-[26px] font-bold text-center ">
                             <h1>Use your NFT collection as collateral for a crypto loan</h1>
                         </div>
 
@@ -21,7 +21,7 @@ export default function Home(){
                     </div>
             </div>
             
-            <div className=" pt-10 md:hidden bg-center border-red-500 bg-contain bg-no-repeat max-w-full h-[370px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
+            <div className=" pt-10 md:hidden bg-center bg-contain bg-no-repeat max-w-full h-[370px]  " style={{ backgroundImage: "url('/images/mobileBG.png')" }}> 
 
                 <div className="  mx-auto ">
     

@@ -13,7 +13,7 @@ export default function Navbar(){
 
 
     return(
-        <div className="border border-red-500 mt-8 mx-16">
+        <div className=" mt-8 mx-16">
             <div className=' z-10 relative hidden lg:block'>
             <div className="flex mx-auto justify-between items-center container">
                 <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
@@ -36,7 +36,7 @@ export default function Navbar(){
         </div>
 
     
-           <div className={`${toggleMenu ? 'h-full' : ''} border border-black w-screen lg:hidden z-20 absolute top-0 left-0  `}>
+           <div className={`${toggleMenu ? 'h-full' : ''} w-screen lg:hidden z-20 absolute top-0 left-0  `}>
                     
                 <div className={` ${toggleMenu ? 'bg-transparent' : 'bg-white'} flex justify-between items-center px-7 sm:px-8 pt-2 md:px-16 lg:px-24`}>
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 

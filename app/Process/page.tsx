@@ -6,7 +6,7 @@ export default function Process(){
     return(
         <div className="flex flex-col w-[100%] bg-bg h-[100%] pt-20 sm:pt-30">
 
-            <div className=" border border-red-500 mx-6 md:mx-16 flex flex-col gap-10 items-center justify-center text-center">
+            <div className="  mx-6 md:mx-16 flex flex-col gap-10 items-center justify-center text-center">
                     <div className="color-code-1 lg:text-[54px] text-[28px] lg:leading-[129px] leading-[62px] font-bold">
                         <h1>The process is pretty simple</h1>
                     </div>
@@ -34,7 +34,7 @@ export default function Process(){
 
            
             
-                <div className=" border border-red-500 mx-6 md:mx-16 flex flex-row justify-center gap-5 lg:gap-20 items-center mb-20">
+                <div className="  mx-6 md:mx-16 flex flex-row justify-center gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10">List your NFT</h1>
@@ -58,7 +58,7 @@ export default function Process(){
                         </p>
                     </div>
 
-                    <div className="border border-red-500 w-[200px]  sm:w-[400px] lg:w-[300px]">
+                    <div className=" w-[200px]  sm:w-[400px] lg:w-[300px]">
                     <img src="/images/2.png" alt="..." className="shadow rounded max-w-full h-auto  border-none" />
                     </div>
                 </div>
