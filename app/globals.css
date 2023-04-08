@@ -90,3 +90,11 @@ body {
     background-color: #82097b;
     position: relative;
 }
+.collection-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 40px;
+  margin-bottom: 60px;
+}

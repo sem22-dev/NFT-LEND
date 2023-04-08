@@ -1,11 +1,11 @@
 "use-client"
 
-import { offers } from '../../Data'
+import { collections, offers } from '../../Data'
 
 
 export default function Lend(){
     return(
-        <div className=" text-Pink-900 h-screen p-20 w-full justify-center relative">
+        <div className=" text-Pink-900 h-screen p-20 w-full justify-center relative pb-[400px]">
             <div className="container flex flex-row px-02">
                     <div className="flex flex-col px-20">
                         <div className=" text-[45px] font-bold">
@@ -40,7 +40,7 @@ export default function Lend(){
                     <h3>Offers made</h3>
                 </div>
 
-               <div>
+               {/* <div>
                {offers.map(({percentage}) => {
                     return (
                         <div className="skills__bar">
@@ -49,9 +49,145 @@ export default function Lend(){
                         </div>
                 );
             })}
-               </div>
+               </div> */}
 
             </div>
+
+            <div className='container flex flex-row px-20 py-10 gap-[400px] '>
+                <div className="flex flex-start items-center rounded-[50px] overflow-hidden border-purple-50 border-2">
+                    <input type="text" placeholder="Search Collections..." className="w-[290px] px-4 py-2 focus:outline-none bg-purple-50 border " />
+                </div>
+               <div className='flex flex-row gap-2'>
+                   <div className='pt-2'><p>Sort by:</p></div>
+
+                   <div className="flex flex-end items-center overflow-hidden border-gray-500 border-2 rounded-[50px]">
+                        <input type="text" placeholder="Most Recent Added Collection " className="w-[290px]  px-4 py-2 focus:outline-none border " />
+                    </div>
+               </div>
+            </div>
+
+            <div className='container flex px-20 pt-10 flex-col pb-[400px]'>
+
+                <div className='flex flex-row justify-around gap-20 bg-purple-200 w-[100%] h-[40px] align-center items-center rounded-sm ml-0 border-2 border-gray-800 font-bold text-[13px]'>
+                        <div className='mr-20'>
+                            <h2>Collections</h2>
+                        </div>
+                        <div className='ml-20'>
+                            <h2>Available Pool</h2>
+                        </div>
+                        <div>
+                            <h2>Highest Loan Offer</h2>
+                        </div>
+                        <div>
+                            <h2>Loan Duration</h2>
+                        </div>
+                        <div className='mr-20'>
+                            <h2>% Return/Loan</h2>
+                        </div>
+                </div>
+
+                <div className='flex flex-row justify-around gap-20 w-[100%] h-[80px] align-center items-center ml-0 border-2 border-gray-800 border-t-0 border-b-gray-400'>
+                        <div className='mr-20 mr'>
+                            <h2>Collections</h2>
+                           
+                        </div>
+                        <div className='ml-20'>
+                            <h2>Available Pool</h2>
+                        </div>
+                        <div>
+                            <h2>Highest Loan Offer</h2>
+                        </div>
+                        <div>
+                            <h2>Loan Duration</h2>
+                        </div>
+                        <div className='mr-20'>
+                            <h2>% Return/loan</h2>
+                        </div>
+                </div>
+
+                <div className='flex flex-row justify-around gap-20 w-[100%] h-[80px] align-center items-center ml-0 border-2 border-gray-800 border-t-0 border-b-gray-400'>
+                        <div className='mr-20'>
+                            <h2>Collections</h2>
+                        </div>
+                        <div className='ml-20'>
+                            <h2>Available Pool</h2>
+                        </div>
+                        <div>
+                            <h2>Highest Loan Offer</h2>
+                        </div>
+                        <div>
+                            <h2>Loan Duration</h2>
+                        </div>
+                        <div className='mr-20'>
+                            <h2>% Return/loan</h2>
+                        </div>
+                </div>
+
+                <div className='flex flex-row justify-around gap-20 w-[100%] h-[80px] align-center items-center ml-0 border-2 border-gray-800 border-t-0 border-b-gray-400'>
+                        <div className='mr-20'>
+                            <h2>Collections</h2>
+                        </div>
+                        <div className='ml-20'>
+                            <h2>Available Pool</h2>
+                        </div>
+                        <div>
+                            <h2>Highest Loan Offer</h2>
+                        </div>
+                        <div>
+                            <h2>Loan Duration</h2>
+                        </div>
+                        <div className='mr-20'>
+                            <h2>% Return/loan</h2>
+                        </div>
+                </div>
+                <div className='flex flex-row justify-around gap-20 w-[100%] h-[80px] align-center items-center ml-0 border-2 border-gray-800 border-t-0 border-b-gray-400'>
+                        <div className='mr-20'>
+                            <h2>Collections</h2>
+                        </div>
+                        <div className='ml-20'>
+                            <h2>Available Pool</h2>
+                        </div>
+                        <div>
+                            <h2>Highest Loan Offer</h2>
+                        </div>
+                        <div>
+                            <h2>Loan Duration</h2>
+                        </div>
+                        <div className='mr-20'>
+                            <h2>% Return/loan</h2>
+                        </div>
+                </div>
+                <div className='flex flex-row justify-around gap-20 w-[100%] h-[80px] align-center items-center ml-0 border-2 border-gray-800 border-t-0 border-b-gray-50'>
+                        <div className='mr-20'>
+                            <h2>Collections</h2>
+                        </div>
+                        <div className='ml-20'>
+                            <h2>Available Pool</h2>
+                        </div>
+                        <div>
+                            <h2>Highest Loan Offer</h2>
+                        </div>
+                        <div>
+                            <h2>Loan Duration</h2>
+                        </div>
+                        <div className='mr-20'>
+                            <h2>% Return/loan</h2>
+                        </div>
+                </div>
+                    
+            </div>
+                     {/* <div>
+                        {collections.map(({name, token, floor, pool, loan_available, loan_offer, last_loan, duration, returns, apy}, index) => {
+                            return (
+                              <div className='relative flex flex-row gap-2 justify-around w-[100%] collection-title'>
+                                    <h1 className='font-bold'>{name}</h1>
+                                <div className='line'></div>
+                              </div>
+                               
+                        );
+                        })}
+                    </div> */}
+          
       </div>
 
     )
