@@ -109,7 +109,7 @@ export default function Process(){
           
             <div className=" w-30 md:w-60">
             <a
-            className=" bg-white group relative inline-flex items-center overflow-hidden rounded border border-transparent px-8 py-3 text-bg focus:outline-none focus:ring "
+            className=" bg-header group relative inline-flex items-center overflow-hidden rounded border border-transparent px-8 py-3 text-bg focus:outline-none focus:ring "
             href="/download"
             >
             <span

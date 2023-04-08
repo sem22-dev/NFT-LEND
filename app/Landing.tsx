@@ -14,9 +14,9 @@ export default function Home(){
 
 
                         <div className="flex flex-row  items-center justify-center md:gap-[200px]">
-                            <button className=" hover:bg-bg2 border-2 border-transparent  lg:w-[160px] w-[120px] h-[43px] lg:h-[63px] lg:top-[161px] top-[11px] bg-gray-800 text-white text-[15px] leading-[24.2px] font-medium rounded-sm tracking-wider">Need a Loan</button>
+                            <button className=" hover:bg-bg3 border border-gray-200  lg:w-[160px] w-[120px] h-[43px] lg:h-[63px] lg:top-[161px] top-[11px] bg-bg text-white text-[15px] leading-[24.2px] font-medium rounded-sm tracking-wider">Need a Loan</button>
 
-                            <button className=" hover:bg-bg hover:text-primary w-[120px] h-[43px] lg:w-[160px] lg:h-[63px] lg:top-[161px] text-black  text-[15px] ml-[100px] leading-[24.2px] font-medium rounded-sm tracking-wider border-gray-800 bg-transparent border-2">Want to lend?</button>
+                            <button className=" hover:bg-header hover:text-bg hover:border-transparent w-[120px] h-[43px] lg:w-[160px] lg:h-[63px] lg:top-[161px] text-black  text-[15px] ml-[100px] leading-[24.2px] font-medium rounded-sm tracking-wider border-gray-800 bg-transparent border-2">Want to lend?</button>
                         </div>
                     </div>
             </div>
