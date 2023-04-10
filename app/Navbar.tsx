@@ -14,17 +14,57 @@ export default function Navbar(){
 
     return(
         <div className=" pt-8 pb-2 px-16 ">
-            <div className=' z-10 relative hidden lg:block'>
+            <div className=' z-10 relative hidden font-bold lg:block'>
                 <div className="flex mx-auto gap-2 justify-between items-center container">
                     <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
 
-                    <div className="flex  gap-10 xl:gap-16 text-[18px]">
-                        <Link className="flex flex-row gap-2" href="/Lend"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                        <Link className="flex flex-row gap-2" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
-                        <Link className="flex flex-row gap-2" href="/about"><p>Community</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                        <Link className="flex flex-row gap-2" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                        <Link className="flex flex-row gap-2" href="/about"><p>More</p></Link> 
+                <div className="flex items-center gap-10 xl:gap-16 text-[18px]">
 
+                    <div className="dropdown dropdown-hover">
+                    <Link className="flex flex-row gap-2" href="/about"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
+                                <li><a>Lend</a></li>
+                                <li><a>Offers</a></li>
+                            </ul>
+                    </div>
+                    
+                    <div className="dropdown dropdown-hover">
+                    <Link className="flex gap-2" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
+                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
+                                <li><a>Borrow</a></li>
+                                <li><a>My Loans</a></li>
+                            </ul>
+                    </div>
+
+                    <div className="dropdown dropdown-hover">
+                    <Link className="flex flex-row gap-2" href="/about"><p>Community</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+
+                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
+                                <li><a>Discord</a></li>
+                                <li><a>Twitter</a></li>
+                            </ul>
+                    </div>
+
+                    <div className="dropdown dropdown-hover">
+                    <Link className="flex flex-row gap-2" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
+                                <li><a>Analytics</a></li>
+                                <li><a>Faqs</a></li>
+                            </ul>
+                    </div>
+
+                    <div className="dropdown dropdown-hover">
+                    <Link className="flex flex-row gap-2" href="/about"><p>More</p></Link> 
+                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
+                                <li><a>How it Works</a></li>
+                                <li><a>Fair Launch</a></li>
+                                <li><a>Docs</a></li>
+                            </ul>
+                    </div>
+                    
+                      
+
+                   
                     </div>
 
                     <div>
@@ -35,8 +75,9 @@ export default function Navbar(){
                     </div>  
                 </div>
             </div>
-
     
+
+            {/* Mobile */}
            <div className={`${toggleMenu ? 'h-full' : ''} w-screen lg:hidden z-20 absolute top-0 left-0  `}>
                     
                 <div className={` bg-white flex justify-between items-center px-7 pt-2 md:px-16 lg:px-24`}>
@@ -60,8 +101,8 @@ export default function Navbar(){
                 
            </div>
            
-        </div>
-    //  </div>
+    </div>
+
         
     )
 }
