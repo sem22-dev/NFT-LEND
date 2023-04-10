@@ -78,7 +78,7 @@ export default function TvlDash(){
                             <h1 className=" text-header font-bold">ETH Deposit APR</h1>
                             <div className="flex justify-between items-center border-b-2 pb-2">
                                 <h1 className=" text-lg text-green-600 font-bold">9.78%</h1>
-                                <button className=" rounded-lg border border-header w-28 p-1 px-2 text-header">Deposit ETH</button>
+                                <button className=" rounded-lg border border-header hover:text-pink-700 w-28 p-1 px-2 text-header">Deposit ETH</button>
                             </div>
                             <div className=" text-sm">
                                 <div className="text-white flex justify-between">
@@ -104,7 +104,7 @@ export default function TvlDash(){
                         <h1 className=" text-header font-bold">ETH Borrow APR</h1>
                         <div className="flex justify-between items-center border-b-2 pb-2">
                             <h1 className=" flex items-center gap-[5px] text-lg text-green-600 font-bold">9.78%  <span className="text-sm">(paid)</span></h1>
-                            <button className=" rounded-lg border border-header w-28 p-1 px-2 text-header">Borrow ETH</button>
+                            <button className=" rounded-lg border border-header hover:text-pink-700 w-28 p-1 px-2 text-header">Borrow ETH</button>
                         </div>
                         <div className="text-sm">
                             <div className="text-white flex justify-between">
@@ -137,7 +137,7 @@ export default function TvlDash(){
                         </div>
                         <div className="flex justify-between items-center">
                             <h1 className=" text-lg text-green-600 font-bold">9.78%</h1>
-                            <button className=" rounded-lg border border-header w-28 p-1 px-2 text-header">Stake SAGE</button>
+                            <button className=" rounded-lg border border-header hover:text-pink-700 w-28 p-1 px-2 text-header">Stake SAGE</button>
                         </div>
 
         </div>
@@ -148,7 +148,7 @@ export default function TvlDash(){
                         </div>
                         <div className="flex justify-between items-center">
                             <h1 className=" text-lg text-green-600 font-bold">45.78%</h1>
-                            <button className=" rounded-lg border border-header w-28 p-1 px-2 text-header">Stake LPs</button>
+                            <button className=" rounded-lg border border-header hover:text-pink-700 w-28 p-1 px-2 text-header">Stake LPs</button>
                         </div> 
         </div>
     </div>
