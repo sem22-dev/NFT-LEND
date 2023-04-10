@@ -1,10 +1,10 @@
-import TvlDash from "../tvl"
+
 
 
 
 export default function Process(){
     return(
-        <div className="flex flex-col w-[100%] bg-bg h-[100%] pt-20 sm:pt-30">
+        <div className="flex flex-col w-[100%] bg-bg h-[100%] py-20 sm:pt-30">
 
             <div className="  mx-6 md:mx-16 flex flex-col gap-10 items-center justify-center text-center">
                     <div className="color-code-1 lg:text-[54px] text-[28px] lg:leading-[129px] leading-[62px] font-bold">
@@ -142,8 +142,6 @@ export default function Process(){
 
            
         </div>
-
-        <TvlDash />
 </div>
         
         

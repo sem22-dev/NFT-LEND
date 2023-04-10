@@ -23,31 +23,32 @@ body {
 }
 
 .slide-side {
-  -webkit-animation: slide-side 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-side 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in 0.5s forwards;
 }
 
-@-webkit-keyframes slide-side {
-  0% {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  to {
+    transform: translateX(0%);
   }
 }
 
-@keyframes slide-side {
-  0% {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
+.slide-side-out {
+  animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0%);
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  to {
+    transform: translateX(-100%);
   }
 }
+
 
 
 .color-code-1 { 

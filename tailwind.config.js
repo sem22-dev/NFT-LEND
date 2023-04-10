@@ -15,6 +15,9 @@ module.exports = {
         'header' : '#EFBB9D',
         'littleBlack' : "#00000090"
       },
+      backgroundImage: {
+        'gradient-to-top': 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)'
+      }
     },
   },
   plugins: [],
