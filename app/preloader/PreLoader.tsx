@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect } from "react";
-import { preLoaderAnim } from "./animations";
+import { preLoaderAnim } from "../animations";
 import "./preloader.css"
 
 const PreLoader = () => {
