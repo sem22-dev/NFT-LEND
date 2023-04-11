@@ -1,13 +1,13 @@
 "use client"
 
 import React, { useEffect } from "react";
-import { preLoaderAnim } from "../animations";
+// import { preLoaderAnim } from "../animations";
 import "./preloader.css"
 
 const PreLoader = () => {
-  useEffect(() => {
-    preLoaderAnim();
-  }, []);
+  // useEffect(() => {
+  //   preLoaderAnim();
+  // }, []);
   return (
     <div className="preloader">
       <div className="texts-container"> 
