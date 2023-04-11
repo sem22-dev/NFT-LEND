@@ -26,7 +26,7 @@ export default function Navbar(){
 
 
     return(
-        <div className={` ${lexend.className} py-5 px-16 bg-gradient-to-top shadow`}>
+        <div className={` ${lexend.className} py-5 px-16 bg-transparent shadow`}>
             <div className=' z-10 relative hidden font-bold lg:block'>
                 <div className="flex mx-auto gap-1 justify-between items-center container">
                     <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
