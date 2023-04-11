@@ -3,69 +3,97 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import { Lexend } from "@next/font/google"
 
 import { GoChevronDown, GoChevronUp,} from 'react-icons/go'
-import { FaTimes } from 'react-icons/fa'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
+
+const lexend = Lexend({ 
+    subsets: ['latin'],
+    weight:['300', '400', '600', '700'],
+  })
+  
 
 export default function Navbar(){
     const [toggleMenu, setToggleMenu ] = useState(false);
 
+    const [isOpen, setIsOpen] = useState(false);
+
+  function toggleDropdown() {
+    setIsOpen(!isOpen);
+  }
+
 
     return(
-        <div className=" pt-8 pb-2 px-16 ">
+        <div className={` ${lexend.className} py-5 px-16 bg-gradient-to-top shadow`}>
             <div className=' z-10 relative hidden font-bold lg:block'>
-                <div className="flex mx-auto gap-2 justify-between items-center container">
+                <div className="flex mx-auto gap-1 justify-between items-center container">
                     <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
 
-                <div className="flex items-center gap-10 xl:gap-16 text-[18px]">
-
+                <div className="flex items-center gap-5 font-light xl:gap-12 text-[17px]">
+                {/* Lend */}
+                <div className="dropdown dropdown-hover">
+                    <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
+                        <p>Lend</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                    </div> 
+                    {isOpen && (
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Lend</Link></li>
+                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Offers</Link></li>
+                        </ul>
+                    )}
+                    </div>
+                    {/* Loan */}
                     <div className="dropdown dropdown-hover">
-                    <Link className="flex flex-row gap-2" href="/about"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
-                                <li><a>Lend</a></li>
-                                <li><a>Offers</a></li>
-                            </ul>
+                    <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
+                        <p>Loan</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                    </div> 
+                    {isOpen && (
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Borrow</Link></li>
+                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">My Loans</Link></li>
+                        </ul>
+                    )}
                     </div>
-                    
-                    <div className="dropdown dropdown-hover">
-                    <Link className="flex gap-2" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
-                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
-                                <li><a>Borrow</a></li>
-                                <li><a>My Loans</a></li>
-                            </ul>
+                        {/* Community */}
+                        <div className="dropdown dropdown-hover">
+                    <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
+                        <p>Community</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                    </div> 
+                    {isOpen && (
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Discord</Link></li>
+                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Twitter</Link></li>
+                        </ul>
+                    )}
                     </div>
+                        {/* About */}
+                        <div className="dropdown dropdown-hover">
+                    <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
+                        <p>About</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                    </div> 
+                    {isOpen && (
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Faqs</Link></li>
+                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Analytics</Link></li>
+                        </ul>
+                    )}
+                    </div>
+                            {/* More */}
+                        <div className="dropdown dropdown-hover">
+                            <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
+                                <p>More</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                            </div> 
+                            {isOpen && (
+                                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                                <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Docs</Link></li>
+                                <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Fair Launch</Link></li>
+                                <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Stats</Link></li>
 
-                    <div className="dropdown dropdown-hover">
-                    <Link className="flex flex-row gap-2" href="/about"><p>Community</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-
-                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
-                                <li><a>Discord</a></li>
-                                <li><a>Twitter</a></li>
-                            </ul>
-                    </div>
-
-                    <div className="dropdown dropdown-hover">
-                    <Link className="flex flex-row gap-2" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
-                                <li><a>Analytics</a></li>
-                                <li><a>Faqs</a></li>
-                            </ul>
-                    </div>
-
-                    <div className="dropdown dropdown-hover">
-                    <Link className="flex flex-row gap-2" href="/about"><p>More</p></Link> 
-                            <ul tabIndex={0} className=" dropdown-content menu p-2 shadow bg-base-100 w-72">
-                                <li><a>How it Works</a></li>
-                                <li><a>Fair Launch</a></li>
-                                <li><a>Docs</a></li>
-                            </ul>
-                    </div>
-                    
-                      
-
-                   
-                    </div>
+                                </ul>
+                            )}
+                        </div>                  
+                </div>
 
                     <div>
                         <button type="button" className="text-white bg-bg hover:bg-header hover:text-bg2 border border-transparent focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">

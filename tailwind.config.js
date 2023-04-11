@@ -1,3 +1,6 @@
+// const { fontFamily } = require('tailwindcss/defaultTheme')
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,7 +20,10 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-to-top': 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)'
-      }
+      },
+      // fontFamily: {
+      //   lexend: ['var(--font-lexend)'],
+      // },
     },
   },
   plugins: [require("daisyui")],
