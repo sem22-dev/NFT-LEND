@@ -5,8 +5,9 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Lexend } from "@next/font/google"
 
-import { GoChevronDown, GoChevronUp,} from 'react-icons/go'
+import { GoChevronDown} from 'react-icons/go'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
+import { GrClose } from 'react-icons/gr'
 
 const lexend = Lexend({ 
     subsets: ['latin'],
@@ -37,7 +38,7 @@ export default function Navbar(){
                         <p>Lend</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
                         <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Lend</Link></li>
                         <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Offers</Link></li>
                         </ul>
@@ -49,7 +50,7 @@ export default function Navbar(){
                         <p>Loan</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
                             <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Borrow</Link></li>
                             <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">My Loans</Link></li>
                         </ul>
@@ -61,7 +62,7 @@ export default function Navbar(){
                         <p>Community</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
                             <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Discord</Link></li>
                             <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Twitter</Link></li>
                         </ul>
@@ -73,7 +74,7 @@ export default function Navbar(){
                         <p>About</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
                         <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Faqs</Link></li>
                         <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Analytics</Link></li>
                         </ul>
@@ -85,7 +86,7 @@ export default function Navbar(){
                                 <p>More</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
                             </div> 
                             {isOpen && (
-                                <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-64">
+                                <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
                                 <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Docs</Link></li>
                                 <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Fair Launch</Link></li>
                                 <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Stats</Link></li>
@@ -109,22 +110,23 @@ export default function Navbar(){
            <div className={`${toggleMenu ? 'h-full' : ''} w-screen lg:hidden z-20 absolute top-0 left-0  `}>
                     
                 <div className={` bg-white flex justify-between items-center px-7 pt-2 md:px-16 lg:px-24`}>
+                <Link href="/" className=" text-[27px] font-extrabold ">SageFi</Link>
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
-                    <Link href="/" className=" text-[27px] font-extrabold ">SageFi</Link>
                 </div>
-                    <div  className= {`flex fixed top-0 overflow-y-hidden w-full ${toggleMenu ? 'bg-littleBlack block' : ' hidden'}`}>
-                                <div className={`flex row w-[400px] h-[100vh] bg-gray-700 flex-col z-10 top-0 left-0 ${toggleMenu ? 'slide-side' : 'slide-side-out'}`}>
-                                    <div className={`pt-36 pl-8 flex flex-col gap-5 text-[20px] text-white`}>
-                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row" href="/"><p>Home</p> </Link> 
-                                        <Link onClick={() => setToggleMenu(false)}  href="/Process" className="flex flex-row">Process</Link>
-                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row" href="/Lend"><p>Lend</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row" href="/Loan"><p>Loan</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
-                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row" href="/about"><p>About</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
-                                        <Link onClick={() => setToggleMenu(false)}  href="/blogs">Our Blog</Link>
-                                        <button onClick={() => setToggleMenu(!toggleMenu)} className="absolute top-2 right-2">X</button>
+                    <div  className= {` ${toggleMenu ? 'block' : ' hidden'} flex fixed top-0 w-full`}>
+                                <div className={`w-screen h-[100vh] flex flex-col gap-5 bg-white`}>
+                                        <div className="flex  items-center justify-between py-10 px-16">
+                                            <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
+                                            <button onClick={() => setToggleMenu(!toggleMenu)} className="text-[28px]"><GrClose /></button>
+                                        </div>
+                                    <div className={` w-full flex flex-col items-center gap-5 text-[28px] text-bg`}>
+                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row hover:text-header" href="/Lend"><p>LEND</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row hover:text-header" href="/Loan"><p>LOAN</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link>    
+                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row hover:text-header" href="/about"><p>COMMUNITY</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row hover:text-header" href="/about"><p>ABOUT</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
+                                        <Link  onClick={() => setToggleMenu(false)} className="flex flex-row hover:text-header" href="/about"><p>MORE</p> <GoChevronDown className="h-[24px] mt-1 cursor-pointer"/></Link> 
                                     </div>
                                 </div>
-                                <div onClick={() => setToggleMenu(false)}  className={` w-full `}></div>
                      </div>
                 
            </div>

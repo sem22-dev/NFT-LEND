@@ -1,7 +1,7 @@
-import Navbar from "./Navbar"
-import Landing from "./Landing"
+// import Navbar from "./Navbar/Navbar"
+import Landing from "./LandingPage/Landing"
 import Process from "./Process/page"
-import PreLoader from "./PreLoader"
+import PreLoader from "./preloader/PreLoader"
 import TvlDash from "./tvl/tvl"
 import { Poppins } from '@next/font/google'
 

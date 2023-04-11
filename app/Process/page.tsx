@@ -11,7 +11,7 @@ export default function Process(){
                         <h1>The process is pretty simple</h1>
                     </div>
 
-                    <div className="text-white sm:text-[25px] lg:text-[32px]">
+                    <div className="text-white sm:text-[25px] lg:text-[25px]">
                         <p>ArtLend has emerged as the top-notch liquidity protocol for 
                         non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by 
                         pledging their NFTs as collateral.</p>

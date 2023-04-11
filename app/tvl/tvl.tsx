@@ -6,7 +6,7 @@ export default function TvlDash(){
     return(
        <div>
 
-    <div className=" md:rounded-t-[200px] bg-gradient-to-top grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-7 py-20">
+    <div className=" md:rounded-t-[100px] bg-gradient-to-top grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-7 py-20">
         {/* firstbox */}
         <div className=" bg-bg  gap-2 p-5 shadow-lg rounded-lg shadow-slate-700 h-auto md:h-auto flex flex-col justify-between row-span-2 md:row-span-1">
                    
