@@ -3,17 +3,10 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { Lexend } from "@next/font/google"
 
 import { GoChevronDown} from 'react-icons/go'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 import { GrClose } from 'react-icons/gr'
-
-const lexend = Lexend({ 
-    subsets: ['latin'],
-    weight:['300', '400', '600', '700'],
-  })
-  
 
 export default function Navbar(){
     const [toggleMenu, setToggleMenu ] = useState(false);
@@ -26,7 +19,7 @@ export default function Navbar(){
 
 
     return(
-        <div className={` ${lexend.className} py-5 px-16 bg-transparent shadow`}>
+        <div className={`font-lexend py-5 px-16 bg-transparent shadow`}>
             <div className=' z-10 relative hidden font-bold lg:block'>
                 <div className="flex mx-auto gap-1 justify-between items-center container">
                     <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
@@ -107,9 +100,9 @@ export default function Navbar(){
     
 
             {/* Mobile */}
-           <div className={`${toggleMenu ? 'h-full' : ''} w-screen lg:hidden z-20 absolute top-0 left-0  `}>
+           <div className={` w-screen lg:hidden z-20 absolute top-0 left-0  `}>
                     
-                <div className={` bg-white flex justify-between items-center px-7 pt-2 md:px-16 lg:px-24`}>
+                <div className={` bg-white flex justify-between items-center px-7 py-2 md:px-16 lg:px-24`}>
                 <Link href="/" className=" text-[27px] font-extrabold ">SageFi</Link>
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
                 </div>
