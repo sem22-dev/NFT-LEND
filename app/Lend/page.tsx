@@ -54,7 +54,7 @@ export default function Lend(){
             {/* For screens smaller than lg */}
 
             <div className=" p-4 lg:hidden border shadow-squareShadow my-10">
-                <div className="flex flex-col gap-4 border-b md:px-24 pb-4">
+                <div className="flex flex-col gap-0 border-b md:px-24 pb-4">
                     <div className="flex w-full justify-between sm:px-14   pb-4 items-center">
                        <div className="flex justify-start flex-col">
                             <h1 className=" text-gray-500 text-[16px] w-[150px] ">Collection</h1>
