@@ -53,6 +53,44 @@ export default function Lend(){
 
             {/* For screens below lg */}
 
+            <div className=" p-4 lg:hidden border shadow-squareShadow my-10">
+                <div className="flex flex-col gap-4 border-b pb-4">
+                    <div className="flex w-full justify-between sm:px-14  pb-4 items-center">
+                       <div className="flex justify-start flex-col">
+                            <h1 className=" text-gray-500 text-[16px] w-[150px] ">Collection</h1>
+                            <h1 className="text-[19px] font-semibold ">LUFFY</h1>
+                       </div>
+                        <div className="flex flex-col justify-center gap-1 items-center a">
+                            <Image src="/images/luffy.png" width="50" height="50" alt="nft" className="rounded-full" />
+                            <span className="text-base font-semibold flex items-center gap-1"><Image src="/images/eth.svg" alt="eth" height="20" width="20" className=" rounded-full" /> 4.75  <span className=" font-medium text-gray-600">floor</span></span>
+                        </div>
+                    </div>
+                    <div className="flex w-full justify-between sm:px-14  pb-4 items-center">
+                        <h1 className=" text-gray-500 text-[16px] w-[150px] ">Available Pool</h1>
+                        <div className="flex flex-col items-end">
+                            <h1 className="flex  gap-1 items-center font-semibold ">981.9 <Image src="/images/eth.svg" alt="eth" height="20" width="20" className=" rounded-full" /></h1>
+                            <span className="text-[14px] font-medium text-gray-500"><span className="text-black">943</span> loans available</span>
+                        </div>
+                    </div>
+                    <div className="flex w-full justify-between sm:px-14  pb-4 items-center">
+                        <h1 className=" text-gray-500 text-[16px] w-[150px] ">Best Loan Offer</h1>
+                        <div className="flex flex-col items-end">
+                            <h1 className="flex  gap-1 items-center font-semibold ">3.90 <Image src="/images/eth.svg" alt="eth" height="20" width="20" className=" rounded-full" /></h1>
+                            <span className="text-[14px] font-medium text-gray-500"><span className="text-black">3.75 ETH</span> last loan taken</span>
+                        </div>
+                    </div>
+                    <div className="flex w-full justify-between sm:px-14  pb-4 items-center">
+                        <h1 className=" text-gray-500 text-[16px] w-[150px] ">Duration</h1>
+                        <h1 className="flex font-semibold  gap-1 ">16d</h1>
+                    </div>
+                    <div className="flex w-full justify-between sm:px-14  pb-4 items-center">
+                        <h1 className=" text-gray-500 text-[16px] w-[150px] ">APY</h1>
+                        <h1 className="flex font-semibold text-green-700 gap-1 ">160%</h1>
+                    </div>
+                    <button className="rounded-lg mx-auto w-1/2 px-6 py-1 bg-header hover:border-transparent">Lend</button>
+                </div>
+                
+            </div>
             
 
 
