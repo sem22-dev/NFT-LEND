@@ -76,7 +76,7 @@ export default function Lend(){
                         <h1 className=" text-gray-500 text-[16px] w-[150px] ">Best Loan Offer</h1>
                         <div className="flex flex-col items-end">
                             <h1 className="flex  gap-1 items-center font-semibold ">3.90 <Image src="/images/eth.svg" alt="eth" height="20" width="20" className=" rounded-full" /></h1>
-                            <span className="text-[14px] font-medium text-gray-500"><span className="text-black">3.75 ETH</span>latest loan</span>
+                            <span className="text-[14px] font-medium text-gray-500"><span className="text-black">3.75 ETH</span> latest loan</span>
                         </div>
                     </div>
                     <div className="flex w-full justify-between sm:px-14  pb-4 items-center">
