@@ -51,7 +51,7 @@ export default function Lend(){
 
             </div>
 
-            {/* For screens below lg */}
+            {/* For screens smaller than lg */}
 
             <div className=" p-4 lg:hidden border shadow-squareShadow my-10">
                 <div className="flex flex-col gap-4 border-b pb-4">
@@ -60,7 +60,7 @@ export default function Lend(){
                             <h1 className=" text-gray-500 text-[16px] w-[150px] ">Collection</h1>
                             <h1 className="text-[19px] font-semibold ">LUFFY</h1>
                        </div>
-                        <div className="flex flex-col justify-center gap-1 items-center a">
+                        <div className="flex flex-col justify-center items-end gap-1">
                             <Image src="/images/luffy.png" width="50" height="50" alt="nft" className="rounded-full" />
                             <span className="text-base font-semibold flex items-center gap-1"><Image src="/images/eth.svg" alt="eth" height="20" width="20" className=" rounded-full" /> 4.75  <span className=" font-medium text-gray-600">floor</span></span>
                         </div>
