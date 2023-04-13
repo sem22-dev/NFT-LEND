@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import ConnectWalletButton from "../metamask"
 
 import { GoChevronDown} from 'react-icons/go'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
@@ -93,10 +94,7 @@ export default function Navbar(){
                 </div>
 
                     <div>
-                        <button type="button" className="text-white bg-bg hover:bg-header hover:text-bg2 border border-transparent focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2">
-                        <Image className="mr-[5px]" src="/images/meta.svg" alt="metamask" width={20} height={20}/>
-                        Connect with MetaMask
-                        </button>
+                        <ConnectWalletButton/>
                     </div>  
                 </div>
             </div>
