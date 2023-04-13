@@ -15,7 +15,7 @@ module.exports = {
         'bg' : '#080C14',
         'bg2': '#06090E',
         'bg3': '#161F31',
-        'header' : '#EFBB9D',
+        'header' : '#FCC153',
         'littleBlack' : "#00000090",
         'discord' : "#5865f2",
         'twitter' : "#1DA1F2",

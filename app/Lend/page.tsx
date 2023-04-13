@@ -9,7 +9,7 @@ export default function Lend(){
             <div className="px-7 md:px-16 font-poppins">
                 <div className="py-10 text-center">
                     <h1 className="text-[40px] sm:text-[48px] font-extrabold">Provide a Loan and Reap the Rewards!</h1>
-                    <p className=" text-gray-600 text-lg">
+                    <p className=" text-gray-600 text-lg md:px-16">
                         At the end of the loan term, you'll get your money back with interest. And if the borrower fails to repay, you'll be compensated with a valuable NFT that you can add to your collection.
                     </p>
                 </div>

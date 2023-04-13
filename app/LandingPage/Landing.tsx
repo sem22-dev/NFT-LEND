@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home(){
     return(
@@ -16,9 +17,9 @@ export default function Home(){
 
 
                         <div className="font-semibold flex  flex-row text-[17px] items-center justify-between md:justify-center md:gap-24 lg:gap-40 xl:gap-64">
-                            <motion.button  whileHover={{ scale: 1.05 }} className="border-header px-3 py-5 sm:px-8  bg-bg text-white leading-[24.2px] rounded-sm tracking-wider">Need a Loan</motion.button>
+                            <motion.button  whileHover={{ scale: 1.05 }} className="border-header px-3 py-5 sm:px-8  bg-bg text-white leading-[24.2px] rounded-sm tracking-wider"><Link href="/Loan">Need a Loan</Link></motion.button>
 
-                            <motion.button  whileHover={{ scale: 1.05 }} className=" bg-header px-3 py-5 sm:px-8 text-bg leading-[24.2px] rounded-sm tracking-wider">Want to lend?</motion.button>
+                            <motion.button  whileHover={{ scale: 1.05 }} className=" bg-header px-3 py-5 sm:px-8 text-bg leading-[24.2px] rounded-sm tracking-wider"><Link href="/Lend">Want to Lend</Link></motion.button>
                         </div>
                     </div>
             </div>
@@ -31,9 +32,9 @@ export default function Home(){
                     <div className="text-[26px] pb-16 font-bold text-center">
                             <p className='pb-10'>Use your NFT collection as collateral for a crypto loan</p>
                             <div className="font-semibold flex gap-2  flex-col text-[17px] items-center justify-center">
-                            <motion.button  whileHover={{ scale: 1.05 }} className="border-header w-40 px-3 py-5 sm:px-8  bg-bg text-white leading-[24.2px] rounded-sm tracking-wider">Need a Loan</motion.button>
+                            <motion.button  whileHover={{ scale: 1.05 }} className="border-header w-40 px-3 py-5 sm:px-8  bg-bg text-white leading-[24.2px] rounded-sm tracking-wider"><Link href="/Loan">Need a Loan</Link></motion.button>
 
-                            <motion.button  whileHover={{ scale: 1.05 }} className=" bg-header px-3 w-40 py-5 sm:px-8 text-bg leading-[24.2px] rounded-sm tracking-wider">Want to lend?</motion.button>
+                            <motion.button  whileHover={{ scale: 1.05 }} className=" bg-header px-3 w-40 py-5 sm:px-8 text-bg leading-[24.2px] rounded-sm tracking-wider"><Link href="/Lend">Want to Lend</Link></motion.button>
                         </div>
                     </div>
 

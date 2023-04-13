@@ -24,67 +24,66 @@ export default function Navbar(){
                 <div className="flex mx-auto gap-1 justify-between items-center container">
                     <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
 
-                <div className="flex items-center gap-5 font-light xl:gap-12 text-[17px]">
+                <div className="flex items-center gap-5 md:gap-10 font-light xl:gap-20 text-[17px]">
                 {/* Lend */}
                 <div className="dropdown dropdown-hover">
                     <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
-                        <p>Lend</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                        <p className="hover:text-header">Lend</p>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
-                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="/Lend">Lend</Link></li>
-                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="/Lend">Offers</Link></li>
-                        </ul>
+                        <div tabIndex={0} className="dropdown-content menu bg-white p-3 shadow-lg text-black  w-60">
+                            <Link className="hover:bg-header rounded-none py-3 pl-2 " href="/Lend">Lend</Link>
+                            <Link className="hover:bg-header rounded-none py-3 pl-2" href="/Lend">Offers</Link>
+                        </div>
                     )}
-                    </div>
+                </div>
                     {/* Loan */}
                     <div className="dropdown dropdown-hover">
                     <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
-                        <p>Loan</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                        <p className="hover:text-header">Loan</p>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
-                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Borrow</Link></li>
-                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">My Loans</Link></li>
-                        </ul>
+                        <div tabIndex={0} className="dropdown-content menu bg-white p-3 shadow-lg text-black  w-60">
+                        <Link className="hover:bg-header rounded-none py-3 pl-2 " href="/Lend">Take a loan</Link>
+                        <Link className="hover:bg-header rounded-none py-3 pl-2" href="/Lend">My loans</Link>
+                    </div>
                     )}
                     </div>
                         {/* Community */}
                         <div className="dropdown dropdown-hover">
                     <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
-                        <p>Community</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                        <p className="hover:text-header">Community</p>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
-                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Discord</Link></li>
-                            <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Twitter</Link></li>
-                        </ul>
+                         <div tabIndex={0} className="dropdown-content menu bg-white p-3 shadow-lg text-black  w-60">
+                            <Link className="hover:bg-header rounded-none py-3 pl-2 " href="/Lend">Twitter</Link>
+                            <Link className="hover:bg-header rounded-none py-3 pl-2" href="/Lend">Discord</Link>
+                        </div>
                     )}
                     </div>
                         {/* About */}
                         <div className="dropdown dropdown-hover">
                     <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
-                        <p>About</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                        <p className="hover:text-header">About</p>
                     </div> 
                     {isOpen && (
-                        <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
-                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Faqs</Link></li>
-                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Analytics</Link></li>
-                        </ul>
+                        <div tabIndex={0} className="dropdown-content menu bg-white p-3 shadow-lg text-black  w-60">
+                        <Link className="hover:bg-header rounded-none py-3 pl-2 " href="/Lend">Docs</Link>
+                        <Link className="hover:bg-header rounded-none py-3 pl-2" href="/Lend">Stats</Link>
+                        <Link className="hover:bg-header rounded-none py-3 pl-2" href="/Lend">Fair Launch</Link>
+                        </div>
                     )}
                     </div>
                             {/* More */}
                         <div className="dropdown dropdown-hover">
                             <div className="cursor-pointer select-none flex flex-row gap-2" onClick={toggleDropdown} onMouseEnter={() => setIsOpen(true)}>
-                                <p>More</p> <GoChevronDown className="h-[24px] mt-1  cursor-pointer"/>
+                                <p className="hover:text-header">More</p>
                             </div> 
                             {isOpen && (
-                                <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
-                                <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Docs</Link></li>
-                                <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Fair Launch</Link></li>
-                                <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Stats</Link></li>
-
-                                </ul>
+                             <div tabIndex={0} className="dropdown-content menu bg-white p-3 shadow-lg text-black  w-60">
+                             <Link className="hover:bg-header rounded-none py-3 pl-2 " href="/Lend">Faqs</Link>
+                             <Link className="hover:bg-header rounded-none py-3 pl-2" href="/Lend">How it Works?</Link>
+                             </div>
                             )}
                         </div>                  
                 </div>
