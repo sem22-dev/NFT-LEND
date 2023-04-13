@@ -8,6 +8,8 @@ import { GoChevronDown} from 'react-icons/go'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 import { GrClose } from 'react-icons/gr'
 
+
+
 export default function Navbar(){
     const [toggleMenu, setToggleMenu ] = useState(false);
 
@@ -16,11 +18,9 @@ export default function Navbar(){
   function toggleDropdown() {
     setIsOpen(!isOpen);
   }
-
-
     return(
-        <div className={`font-lexend py-5 px-16 bg-transparent shadow`}>
-            <div className=' z-10 relative hidden font-bold lg:block'>
+        <div className={`sticky top-0 font-lexend py-5 px-16`}>
+            <div className=' hidden font-bold lg:block'>
                 <div className="flex mx-auto gap-1 justify-between items-center container">
                     <Link href="/" className="text-[45px] font-extrabold ">SageFi</Link>
 
@@ -32,8 +32,8 @@ export default function Navbar(){
                     </div> 
                     {isOpen && (
                         <ul tabIndex={0} className="dropdown-content menu bg-bg p-2 shadow text-white w-64">
-                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Lend</Link></li>
-                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="Lend">Offers</Link></li>
+                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="/Lend">Lend</Link></li>
+                        <li><Link className="hover:bg-header rounded-none hover:text-bg" href="/Lend">Offers</Link></li>
                         </ul>
                     )}
                     </div>

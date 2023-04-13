@@ -1,13 +1,21 @@
+"use client"
+
 import './globals.css'
 import Navbar from './Navbar/Navbar'
 import { Lexend } from "next/font/google"
-
+import { Comic_Neue } from 'next/font/google'
 import { Poppins } from '@next/font/google'
 
 export const metadata = {
   title: 'SageFi',
   description: ' the top-notch liquidity protocol for non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by pledging their NFTs as collateral.',
 }
+
+const comic = Comic_Neue({ 
+  subsets: ['latin'],
+  weight:['300', '400', '700'],
+  variable: "--font-comic"
+})
 
 const lexend = Lexend({ 
   subsets: ['latin'],
@@ -22,11 +30,8 @@ const poppins = Poppins({
 })
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children, }: {children: React.ReactNode}) {
+  
   return (
     <html lang="en">
       <body className={`${lexend.variable} ${poppins.variable}`}>

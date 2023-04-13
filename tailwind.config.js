@@ -16,14 +16,18 @@ module.exports = {
         'bg2': '#06090E',
         'bg3': '#161F31',
         'header' : '#EFBB9D',
-        'littleBlack' : "#00000090"
+        'littleBlack' : "#00000090",
+        'discord' : "#5865f2",
+        'twitter' : "#1DA1F2",
+        'youtube' : "#FF0000"
       },
       backgroundImage: {
         'gradient-to-top': 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)'
       },
       fontFamily: {
         lexend: ['var(--font-lexend)'],
-        poppins: ['var(--font-poppins)']
+        poppins: ['var(--font-poppins)'],
+        comic : ['var(--font-comic)']
       },
       boxShadow:{
         squareShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 8px 0px',
