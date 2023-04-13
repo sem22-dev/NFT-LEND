@@ -1,5 +1,3 @@
-"use client"
-
 import './globals.css'
 import Navbar from './Navbar/Navbar'
 import { Lexend } from "next/font/google"
