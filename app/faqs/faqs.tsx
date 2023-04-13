@@ -2,7 +2,7 @@
 
 export default function Faqs(){
     return (
-        <div className="space-y-4 flex flex-col justify-center px-16 lg:px-32 py-16">
+        <div className="space-y-4 flex flex-col justify-center px-7 md:px-16 lg:px-32 py-16">
         <div className="py-5 flex flex-col gap-3">
             <h1 className="text-center text-[48px]"> Any Queries?</h1>
             <p className="text-center text-[20px] ">Our FAQ section offers a quick and easy way to grasp the fundamentals of peer-to-peer NFT lending.</p>
