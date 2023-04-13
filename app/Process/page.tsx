@@ -6,19 +6,19 @@ export default function Process(){
     return(
         <div className="flex flex-col w-[100%] bg-bg h-[100%] py-20 sm:pt-30 px-7 lg:px-32">
 
-            <div className="  mx-6 md:mx-16 flex flex-col gap-5 items-center justify-center text-center">
-                    <div className=" text-white lg:text-[48px] text-[24px] lg:leading-[129px] leading-[62px]">
+            <div className=" md:px-16 flex flex-col gap-5 items-center justify-center text-center">
+                    <div className=" text-white lg:text-[48px] text-[21px] sm:text-[24px]">
                         <h1>The process is pretty simple</h1>
                     </div>
 
-                    <div className="text-white sm:text-[25px] lg:text-[20px] px-10">
+                    <div className="text-white text-[12px] sm:text-[15px] lg:text-[20px] md:px-10">
                         <p>SageFi has emerged as the top-notch liquidity protocol for 
                         non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by 
                         pledging their NFTs as collateral.</p>
                     </div>
             </div>
                     
-                <div className="mx-auto md:text-lg my-10 md:my-20 w-[226px] inline-flex rounded-lg border border-header font-bold p-1">
+                <div className="mx-auto md:text-lg my-10 md:my-20 w-[226px] inline-flex rounded-lg border border-header font-bold p-[2px]">
                     <button
                         className="bg-header inline-block rounded-md px-4 py-2 text-sm text-bg hover:text-gray-700 focus:relative"
                     >
@@ -34,7 +34,7 @@ export default function Process(){
 
            
             
-                <div className="  mx-6 md:mx-16 flex flex-row justify-center gap-5 lg:gap-20 items-center mb-20">
+                <div className="flex flex-row justify-center gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10"><span className="font-light">List your</span> NFT</h1>
@@ -49,7 +49,7 @@ export default function Process(){
                     </div>
                 </div>
 
-                <div className="mx-6 md:mx-16 flex flex-row-reverse justify-center  gap-5 lg:gap-20 items-center mb-20">
+                <div className=" flex flex-row-reverse justify-center  gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10"><span className="font-light">Pick best</span> loan offer</h1>
@@ -63,7 +63,7 @@ export default function Process(){
                     </div>
                 </div>
 
-                <div className="mx-6 md:mx-16 flex flex-row justify-center  gap-5 lg:gap-20 items-center mb-20">
+                <div className=" flex flex-row justify-center  gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className= "  text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
                         <h1 className="pb-10"><span className="font-light">Repay Loan,</span> get NFT back.</h1>
