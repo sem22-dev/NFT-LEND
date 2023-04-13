@@ -4,8 +4,8 @@ import { FaDiscord, FaTwitter, FaYoutube } from "react-icons/fa";
 export default function Footer(){
     return(
 
-    <footer aria-label="Site Footer" className="font-lexend bg-gradient-to-top">
-    <div className="font-comic max-w-screen-xl px-7 md:px-16  py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
+    <footer aria-label="Site Footer" className="font-lexend bg-white">
+    <div className="font-comic max-w-screen-xl px-7 md:px-16  py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-32">
       <div className=" flex flex-col md:flex-row gap-20 md:gap-40 ">
         <div className="flex flex-col gap-2">
                 <div className="text-bg font-lexend">
@@ -30,38 +30,38 @@ export default function Footer(){
       >
           <div className="flex flex-col gap-6">
           <p className=" text-gray-900 text-xl font-medium  pb-2">Links</p>
-            <Link href="#" className="text-gray-700 transition hover:opacity-75">
+            <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Lend
             </Link>
-            <Link href="#" className="text-gray-700 transition hover:opacity-75">
+            <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Loan
             </Link>
-            <Link href="#" className="text-gray-700 transition hover:opacity-75">
+            <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Faqs
             </Link>
-            <Link href="#" className="text-gray-700 transition hover:opacity-75">
+            <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Analytics
             </Link>
-            <Link href="#" className="text-gray-700 transition hover:opacity-75">
+            <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Docs
             </Link>
         </div>
 
         <div className="flex flex-col gap-6">
           <p className=" text-gray-900 text-xl font-medium pb-2">Legal</p>
-          <Link href="#" className="text-gray-700 transition hover:opacity-75">
+          <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Terms & Conditions
                 </Link>
 
     
-            <Link href="#" className="text-gray-700 transition hover:opacity-75">
+            <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 Privacy Policy
             </Link>
         </div>
 
         <div className="flex flex-col gap-6">
           <p className=" text-gray-900 text-xl font-medium pb-2">Helpful Links</p>
-          <Link href="#" className="text-gray-700 transition hover:opacity-75">
+          <Link href="#" className="text-gray-700 transition hover:opacity-75 hover:underline">
                 How it works ?
           </Link>
 

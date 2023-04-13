@@ -4,15 +4,15 @@
 
 export default function Process(){
     return(
-        <div className="flex flex-col w-[100%] bg-bg h-[100%] py-20 sm:pt-30">
+        <div className="flex flex-col w-[100%] bg-bg h-[100%] py-20 sm:pt-30 px-7 lg:px-32">
 
             <div className="  mx-6 md:mx-16 flex flex-col gap-5 items-center justify-center text-center">
-                    <div className="color-code-1 lg:text-[48px] text-[24px] lg:leading-[129px] leading-[62px] font-bold">
+                    <div className=" text-white lg:text-[48px] text-[24px] lg:leading-[129px] leading-[62px]">
                         <h1>The process is pretty simple</h1>
                     </div>
 
                     <div className="text-white sm:text-[25px] lg:text-[20px] px-10">
-                        <p>ArtLend has emerged as the top-notch liquidity protocol for 
+                        <p>SageFi has emerged as the top-notch liquidity protocol for 
                         non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by 
                         pledging their NFTs as collateral.</p>
                     </div>
@@ -37,7 +37,7 @@ export default function Process(){
                 <div className="  mx-6 md:mx-16 flex flex-row justify-center gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
-                        <h1 className="pb-10">List your NFT</h1>
+                        <h1 className="pb-10"><span className="font-light">List your</span> NFT</h1>
                         <p className=" font-normal w-[190px] sm:w-[500px] text-primary text-[16px] text-left sm:text-[25px]">
                             The process starts with listing your NFT and defining the loan's terms.
                             After that, other users will make loan offers to you
@@ -52,7 +52,7 @@ export default function Process(){
                 <div className="mx-6 md:mx-16 flex flex-row-reverse justify-center  gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className="text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
-                        <h1 className="pb-10">Pick best loan offer</h1>
+                        <h1 className="pb-10"><span className="font-light">Pick best</span> loan offer</h1>
                         <p className=" font-normal w-[190px] sm:w-[500px] text-primary text-[16px] text-left sm:text-[25px]">
                         Upon accepting a loan offer, your NFT is secured in an escrow smart contract, and the lender transfers wETH/DAI/USDC directly to your wallet.
                         </p>
@@ -66,7 +66,7 @@ export default function Process(){
                 <div className="mx-6 md:mx-16 flex flex-row justify-center  gap-5 lg:gap-20 items-center mb-20">
                     
                     <div className= "  text-white text-24px lg:text-[54px] sm:text-[30px] font-bold ">
-                        <h1 className="pb-10">Repay loan, get NFT back.</h1>
+                        <h1 className="pb-10"><span className="font-light">Repay Loan,</span> get NFT back.</h1>
                         <p className=" font-normal w-[190px] sm:w-[500px] text-primary text-[16px] text-left sm:text-[25px]">
                         When you repay your loan on time, your NFT will be automatically returned to your wallet.
                         </p>

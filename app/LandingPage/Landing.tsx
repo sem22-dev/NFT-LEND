@@ -8,7 +8,7 @@ export default function Home(){
     return(
         
         <div>
-            <div className="pt-10 px-7 hidden md:block lg:px-16 bg-center bg-cover bg-no-repeat sm:max-w-full h-[500px] lg:h-[700px] bg-blue-200 " style={{ backgroundImage: "url('/images/backgroundImage3.png')" }}>
+            <div className="pt-10 px-7 hidden md:block lg:px-32 bg-center bg-cover bg-no-repeat sm:max-w-full h-[500px] lg:h-[700px] bg-blue-200 " style={{ backgroundImage: "url('/images/backgroundImage3.png')" }}>
                     <div className=" container flex flex-col gap-16 xl:gap-10 mx-auto ">
                         
                         <div className=" lg:text-[56px] text-[26px] font-bold text-center ">
