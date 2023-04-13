@@ -6,12 +6,12 @@ export default function Process(){
     return(
         <div className="flex flex-col w-[100%] bg-bg h-[100%] py-20 sm:pt-30">
 
-            <div className="  mx-6 md:mx-16 flex flex-col gap-10 items-center justify-center text-center">
-                    <div className="color-code-1 lg:text-[54px] text-[28px] lg:leading-[129px] leading-[62px] font-bold">
+            <div className="  mx-6 md:mx-16 flex flex-col gap-5 items-center justify-center text-center">
+                    <div className="color-code-1 lg:text-[48px] text-[24px] lg:leading-[129px] leading-[62px] font-bold">
                         <h1>The process is pretty simple</h1>
                     </div>
 
-                    <div className="text-white sm:text-[25px] lg:text-[25px]">
+                    <div className="text-white sm:text-[25px] lg:text-[20px] px-10">
                         <p>ArtLend has emerged as the top-notch liquidity protocol for 
                         non-fungible tokens (NFTs), granting NFT holders the leverage to secure cryptocurrency loans from lenders by 
                         pledging their NFTs as collateral.</p>

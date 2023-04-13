@@ -11,7 +11,7 @@ export default function TvlDash(){
         <div className=" bg-bg  gap-2 p-5 shadow-lg rounded-lg shadow-slate-700 h-auto md:h-auto flex flex-col justify-between row-span-2 md:row-span-1">
                    
                         <div>
-                            <h1 className=" text-header font-bold">Deposit & Borrow TVL</h1>
+                            <h1 className=" text-header font-bold">Deposit and Borrow Total Value Locked (TVL)</h1>
                             <h1 className=" text-lg text-white font-bold">116,689.91ETH</h1>
                         </div>
                         <div className="flex flex-col gap-3 ">

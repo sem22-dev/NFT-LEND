@@ -4,8 +4,8 @@ import { FaDiscord, FaTwitter, FaYoutube } from "react-icons/fa";
 export default function Footer(){
     return(
 
-    <footer aria-label="Site Footer" className=" font-lexend bg-gradient-to-top">
-    <div className="font-comic max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
+    <footer aria-label="Site Footer" className="font-lexend bg-gradient-to-top">
+    <div className="font-comic max-w-screen-xl px-7 md:px-16  py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
       <div className=" flex flex-col md:flex-row gap-20 md:gap-40 ">
         <div className="flex flex-col gap-2">
                 <div className="text-bg font-lexend">
