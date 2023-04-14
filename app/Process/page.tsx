@@ -8,7 +8,7 @@ export default function Process(){
 
             <div className=" md:px-16 flex flex-col gap-5 items-center justify-center text-center">
                     <div className=" text-white lg:text-[48px] text-[21px] sm:text-[24px]">
-                        <h1>The process is pretty simple</h1>
+                        <h1>The process is <span className="lg:text-[48px] text-[21px] sm:text-[24px] font-semibold" >quick and Easy</span></h1>
                     </div>
 
                     <div className="text-white text-[12px] sm:text-[15px] lg:text-[20px] md:px-10">
