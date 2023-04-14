@@ -16,6 +16,7 @@ module.exports = {
         'bg2': '#06090E',
         'bg3': '#161F31',
         'header' : '#FCC153',
+        'headerDark': '#f7b200',
         'littleBlack' : "#00000090",
         'discord' : "#5865f2",
         'twitter' : "#1DA1F2",
@@ -32,6 +33,32 @@ module.exports = {
         squareShadow: 'rgba(0, 0, 0, 0.08) 0px 4px 8px 0px',
       }
     },
+  },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+        
+"primary": "#570DF8",
+        
+"secondary": "#F000B8",
+        
+"accent": "#37CDBE",
+        
+"neutral": "#3D4451",
+        
+"base-100": "#FFFFFF",
+        
+"info": "#3ABFF8",
+        
+"success": "#36D399",
+        
+"warning": "#FBBD23",
+        
+"error": "#F87272",
+        },
+      },
+    ],
   },
   plugins: [require("daisyui")],
 }

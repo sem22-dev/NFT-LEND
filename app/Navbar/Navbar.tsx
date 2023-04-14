@@ -103,7 +103,7 @@ export default function Navbar(){
             {/* Mobile */}
            <div className={` w-screen lg:hidden z-20 absolute top-0 left-0  `}>
                     
-                <div className={` bg-white flex justify-between items-center px-7 py-2 md:px-16 lg:px-24`}>
+                <div className={` bg-white flex justify-between items-center px-7 py-2 md:px-32 lg:px-24`}>
                 <Link href="/" className=" text-[27px] font-extrabold ">SageFi</Link>
                     <HiOutlineMenuAlt1 fontSize={27} onClick={() => setToggleMenu(!toggleMenu)}/> 
                 </div>
