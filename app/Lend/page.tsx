@@ -66,7 +66,7 @@ export default function Lend(){
                         {isModalVisible && 
                         (
                             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center" onClick={handleCloseModal}>
-                            <div className="bg-white p-0 w-[700px] rounded-lg shadow-lg" onClick={(event) => event.stopPropagation()}>
+                            <div className="bg-white p-0 rounded-lg shadow-lg" onClick={(event) => event.stopPropagation()}>
                                 <div className="flex p-4 gap-8">
                                     <Image src="/images/luffy.png" alt="luffy" width={350} height={200} className=" bg-cover h-[400px]"/>
                                     <div className="w-full flex flex-col gap-2">
